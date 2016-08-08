@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#footer {
+	height: 500px;
+	width: 100%;
+	background-color: "white";
+}
+
+ul {
+	list-style-type: none;
+	background-color: #333333;
+	color: white;
+	margin: 20px;
+	padding: 0px;
+	overflow: hidden;
+}
+li {
+	float: left;
+}
+
+li a , .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover , .dropdown:hover .dropbtn {
+    background-color: "grey";
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+body {
+	background: url("anime_bckg.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#frame {
+	margin-top: 205px;
+	margin-left: 240px;
+	position: absolute;
+	max-width: 845px;
+	z-index: -1;
+}
+
+.dropdown_content {
+	position: absolute;
+	background-color: #f9f9f9;
+	display: none;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown_content a {
+	color: black;
+	display: block;
+	text-decoration: none;
+	text-align: left;
+	padding: 12px 16px;
+
+}
+
+.dropdown_content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown_content {
+	display: block;
+}
+
+
+
+</style>
+</head>
+<body>
+<ul>
+<li><a href="http://myanimelist.net/anime/28121/Dungeon_ni_Deai_wo_Motomeru_no_wa_Machigatteiru_Darou_ka" target="iframe01">DANMICHI</a></li>
+<li class="dropdown">
+	<a href="http://myanimelist.net/anime/20/Naruto" target="iframe01" class="dropbtn">NARUTO</a>
+    	<div class="dropdown_content">
+      		<a href="#">Sasuke</a>
+      		<a href="#">Sakura</a>
+      		<a href="#">Kakashi</a>
+      		<a href="#">Naruto</a>
+      		<a href="#">Shikamaru</a>
+      		<a href="#">Yamato</a>
+    	</div>
+</li>
+<li><a href="http://www.w3schools.com/js/default.asp" target="iframe01"> <abbr title="Fairy Tail">FT</abbr> </a></li>
+<li class="dropdown">
+	<a href="http://myanimelist.net/anime/1535/Death_Note?q=death%20"
+	target="iframe01" class="dropbtn">DEATH NOTE</a>
+    	<div class="dropdown_content">
+      		<a href="#">Light Yagami</a>
+      		<a href="#">L</a>
+      		<a href="#">Ryuk</a>
+      		<a href="#">Misa Amane</a>
+      		<a href="#">Mello</a>
+      		<a href="#">Near</a>
+    	</div>
+</li>
+<li><a href="http://myanimelist.net/anime/16498/Shingeki_no_Kyojin" target="iframe01"> <abbr title="Attack on Titan">AOT</abbr> </a></li>
+<li><a href="http://myanimelist.net/anime/15315/Mondaiji-tachi_ga_Isekai_kara_Kuru_Sou_Desu_yo?q=problem" target="iframe01">MONDAIJI</a></li>
+</ul>
+<div id="frame">
+<iframe src="http://www.bing.com/" height="520px" width="845px" name="iframe01" ></iframe>
+</div>
+
+</body>
+</html>
